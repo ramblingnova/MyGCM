@@ -209,8 +209,9 @@ public class MainActivity extends Activity {
         editor.commit();
     }
 
+    // http://bikee.kr.pe/device
     // call server url -> user id, message -> 메시지 전송할 때
-    // call server url -> registrationID, deviceID, Build.DEVICE, user email -> 로그인 할 때...
+    // call server url -> registrationID, deviceID, OS -> 로그인 할 때...
     void registerToken() {
         // Device ID가 없으면 발급
         if (deviceID == null)
@@ -254,7 +255,5 @@ public class MainActivity extends Activity {
             }
         };
         mQueue.add(request);
-
-
     }
 }
